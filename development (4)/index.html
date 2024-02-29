@@ -1,0 +1,601 @@
+<!DOCTYPE html><!--  TELLING BROWSER WE ARE USING HTML 5 -->
+<html lang="en">
+
+<head>
+
+    <!-- metatags -->
+    <!-- A <meta> tag with a "name" attribute set to "description" and a "content" attribute that contains a description of the webpage. -->
+    <meta name="description" content="about home page of camera selling website(cammy) ">
+
+    <!-- A <meta> tag with a "name" attribute set to "author" and a "content" attribute that contains the names of the authors of the webpage. -->
+    <meta name="author" content="Sanskar Lamichhane,Biswo Joshi,Anjali Yadav">
+
+    <!-- A <meta> tag with a "name" attribute set to "viewport" and a "content" attribute that specifies the viewport settings for the webpage. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+
+    <!-- linking css file to home page -->
+    <link rel="stylesheet" href="./style.css">
+
+
+    <!-- internal css for home page -->
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial;
+            padding: 0px;
+            position: relative;
+
+
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+
+
+
+        .homepagephoto {
+            height: 750px;
+            width: 1370px;
+
+
+
+
+
+
+            margin-top: 100px;
+
+            margin-left: 0px;
+            margin-right: 0px;
+
+
+
+
+            position: relative;
+
+
+
+
+
+
+
+        }
+
+
+
+
+        .A,
+        .B,
+        .C,
+        .D {
+            animation: slideleft 1s linear forwards;
+        }
+
+        @keyframes slideleft {
+            0% {
+                transform: translate(100px);
+                opacity: 0;
+
+            }
+
+
+
+            100% {
+                transform: translate(0px);
+                opacity: 1;
+
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+        .A {
+            margin-bottom: 10px;
+            font-size: 30px;
+            animation-delay: 1s;
+
+
+        }
+
+
+        .B {
+            color: black;
+            font-weight: bold;
+            font-size: 50px;
+            margin-bottom: 10px;
+            animation-delay: 2s;
+
+        }
+
+        .C {
+            margin-bottom: 10px;
+            font-size: 30px;
+            animation-delay: 3s;
+
+        }
+
+        .D {
+            background-color: black;
+            font-size: 30px;
+            color: white;
+            padding: 10px 20px 10px 20px;
+            transition: 0.5s;
+            cursor: pointer;
+            border-radius: 15px;
+            animation-delay: 4s;
+
+
+        }
+
+
+
+        .D:hover {
+
+            background-color: rgba(0, 0, 0, 0.695);
+
+
+        }
+
+        .designation {
+            position: absolute;
+            top: 400px;
+            left: 45px;
+
+        }
+
+        /* The .description_box class applies to a container element 
+and sets its position, width, height, background-image, margin,
+ top, border-radius, padding, and border values. */
+        .overview {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+
+            position: relative;
+            width: 90%;
+            height: 78vh;
+            background-image: linear-gradient(rgb(19, 19, 52), rgb(42, 62, 107));
+
+            top: 20px;
+            border-radius: 70px;
+            padding: 32px;
+            border: 0.1px solid black;
+
+        }
+
+        /* The #des1, #des2, #des3, and #des4 rules apply to elements with 
+  the corresponding IDs and set their left, width, and background-color values.they are section having 
+  all information about different webpages */
+
+        #des1 {
+
+            width: 320px;
+            background-color: #f4f4f4;
+        }
+
+        #des2 {
+
+            width: 320px;
+            background-color: #f4f4f4;
+        }
+
+        #des3 {
+
+            width: 320px;
+            background-color: #f4f4f4;
+        }
+
+        #des4 {
+
+            width: 320px;
+            background-color: #f4f4f4;
+        }
+
+        /* The .des class applies to elements within the .description_box container 
+  and sets their text-align, position, height, border-radius, margin-top, and border values. des is class of 
+  all section having other elements like logo and paragraph having information of other
+  webpages*/
+        .des {
+            text-align: center;
+            margin: 45px;
+
+            height: 560px;
+            border-radius: 40px;
+            margin-top: 35px;
+            border: 2px solid black;
+        }
+
+        /* hover effect to description boxes  */
+        .des:hover {
+            transform: translateY(-0.8%);
+            box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+        }
+
+        /* The .des p rule applies to p elements within elements with the 
+  .des class and sets their margin-top, padding, font-size, font-family,
+   font-weight, and color values */
+        .des p {
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 25px;
+            font-family: smallcursive;
+            font-weight: 550px;
+            color: rgb(62, 61, 61);
+        }
+
+        /* The .des h1 rule applies to h1 elements within elements with the
+   .des class and sets their font-family and letter-spacing values. */
+        .des h1 {
+            font-family: slogan;
+            letter-spacing: 2px;
+        }
+
+        /* The .des p a rule applies to a elements within p elements 
+  within elements with the .des class and sets their text-decoration,
+   color, position, top, padding, border-radius, font-family, font-size,
+    letter-spacing, and background values. */
+        .des p a {
+            text-decoration: none;
+            color: white;
+            position: relative;
+            top: 40px;
+            padding: 15px;
+            border-radius: 30px;
+            font-family: bigbold;
+            font-size: 18px;
+            letter-spacing: 3px;
+            background: rgb(249, 11, 51);
+        }
+
+        /* The .des p a:hover rule defines a hover effect for a elements 
+  within p elements within elements with the .des class, which changes 
+  the background and box-shadow of the element when the cursor is hovered over it. */
+        .des p a:hover {
+            background: rgb(11, 249, 74);
+            box-shadow: 0 0 5px rgb(11, 249, 74), 0 0 25px rgb(11, 249, 74);
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- header part starts from here -->
+    <div class="header">
+        <div class="header-list">
+            <!-- for our website logo -->
+            <img class="logo" src="./images/Logo1.png" alt="no img">
+
+        </div>
+
+
+        <!-- code for navigation bar  -->
+        <div class="header-list1">
+
+
+            <div><a href="/"><button class="active">Home</button></a></div>
+            <div><a href="./Pages/Product.html" class="social">Product</a></div>
+            <div><a href="./Pages/research.html"><button class="social">Research</button></a>
+            </div>
+            <div><a href="./Pages/blog.html"><button class="social">Blog</button></a></div>
+            <div><a href="./Pages/blog.html"><button class="social">About us</button></a></div>
+
+            <!-- code for sign in and sign up button  -->
+            <div><a href="./Pages/login.html"><button class="design1">Login</button></a></div>
+            <div><a href="./Pages/signup.html"><button class="design1">Sign up</button></a></div>
+
+        </div>
+    </div>
+
+
+
+    <!-- header part closes from here -->
+
+    <div class="container1" style="max-width:1600px;
+    margin-left:0px;
+    margin-right:0px;
+    width:100%;
+    ">
+
+        <!--    inline css for the background image of home page  -->
+        <img style="height: 750px;
+min-width:1369px;
+width:100%;
+margin-top: 100px;
+margin-left: 0px;
+margin-right: 0px;
+position: relative;" src="images/camera.jpg">
+
+        <!-- inline css for the content written on the background image -->
+        <div style="position: absolute;
+top: 400px;
+left: 45px;">
+            <!-- content within the home page background image using four div and each one different classes -->
+            <div class="A">New Inspiration 2023 </div>
+            <div class="B">CAMERA MADE FOR YOU!</div>
+            <div class="C">Trending camera collection</div>
+            <div><button class="D">SHOP NOW</button></div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <p class="paragraph1">
+        OUR FEATURED PRODUCTS
+    </p>
+
+
+    <!-- section for the featured products where there are list of products in home page -->
+    <section class="FP">
+        <div class="system1">
+            <img class="cam1" src="images/product1.jpg">
+            <div class="property1">Canon Eos R5</div>
+            <div class="hello">
+                <div class="cut">Rs.2,00,000</div>
+                <div>Rs.1,80,000</div>
+            </div>
+            <div><a href="./Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+
+
+        <div class="system1">
+            <img class="cam1" src="images/product2.jpg">
+            <div class="property1">Canon EOS 70D</div>
+            <div class="hello">
+                <div class="cut">Rs.1,50,000</div>
+                <div>Rs.1,30,000</div>
+            </div>
+            <div><a href="./Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+
+
+        <div class="system1">
+            <img class="cam1" src="images/product3.png">
+            <div class="property1">Canon EOS 5D</div>
+            <div class="hello">
+                <div class="cut">Rs.1,67,000</div>
+                <div>Rs.1,40,000</div>
+
+            </div>
+            <div><a href="./Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+
+
+        <div class="system1">
+            <img class="cam1" src="images/product4.jpg">
+            <div class="property1">Canon EOS R6</div>
+            <div class="hello">
+                <div class="cut">Rs.2,27,000</div>
+                <div>Rs.2,18,000</div>
+            </div>
+            <div><a href="./Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+
+        <div class="system1">
+            <img class="cam1" src="images/product5.jpg">
+            <div class="property1">Sony A7 III</div>
+            <div class="hello">
+                <div class="cut">Rs.2,50,000</div>
+                <div>Rs.2,20,000</div>
+            </div>
+            <div><a href="./Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+
+
+        <div class="system1">
+            <img class="cam1" src="images/action2.jpg">
+            <div class="property1">Gopro Hero 8</div>
+            <div class="hello">
+                <div class="cut">Rs.1,20,000</div>
+                <div>Rs.1,00,000</div>
+            </div>
+            <div><a href="./Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+
+
+        <div class="system1">
+            <img class="cam1" src="images/product7.png">
+            <div class="property1">Nikon D850</div>
+            <div class="hello">
+                <div class="cut">Rs.1,00,000</div>
+                <div>Rs.93,000</div>
+            </div>
+            <div><a href="./Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+
+
+        <div class="system1">
+            <img class="cam1" src="images/product8.webp">
+            <div class="property1">Nikon D6</div>
+            <div class="hello">
+                <div class="cut">Rs.1,24,000</div>
+                <div>Rs.1,10,000</div>
+            </div>
+            <div><a href="./Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+
+    </section>
+    <div class="main">
+
+        <div class="overview">
+
+
+            <!-- research -->
+
+            <section class="des" id="des3">
+
+                <!-- research logo -->
+
+                <figure>
+
+                    <img src="./images/research.png">
+
+                </figure>
+
+
+
+                <h1 style="margin-top: 16px;">RESEARCH</h1>
+
+                <!-- research page description -->
+
+                <p>Research page contains all the components used by us for this website which make people easy
+                    for investigation about the various cameras with their features .This page actually does the
+                    comparision of our
+                    website with the referenced website as well as try to clarify our website.
+                    <br> <a href="./Pages/research.html">GO TO RESEARCH</a>
+                </p>
+
+
+            </section>
+            <!-- blog page -->
+
+            <section class="des" id="des1">
+
+                <!-- blog logo  -->
+
+                <figure>
+
+                    <img src="./images/blog.png">
+
+                </figure>
+
+                <h1 style="margin-top: 15px;">BLOG</h1> <!-- inline css -->
+
+                <!-- blog page description -->
+
+                <p>
+                    Blog page contains the information how technology impact our daily lives
+                    and business.Technology is a scientific term which is achieved , acquire and improved by the humans
+                    to make our daily life easier This page is considered a valuable page within this website.<br> <a
+                        href=".pages/blog.html">GO TO BLOG</a>
+                </p>
+
+            </section>
+            
+
+
+
+
+
+
+
+            <!-- about us page -->
+
+            <section class="des" id="des4">
+
+                <!-- about us logo -->
+                <figure>
+
+                    <img src="./images/about_us.png">
+
+                </figure>
+
+                <h1 style="margin-top: 15px;">ABOUT US</h1>
+
+                <!-- about_us page description -->
+
+                <p>About Us section comprises the detailed portfolio of each team
+                    member of the group. A portfolio consist of technical and soft
+                    skills, educational and volunteering background, certifications,etc. This
+                    page helps to determine the calliber of each team members.
+                    <br> <a href=".pages/about.html">GO TO ABOUT US</a>
+                </p>
+
+
+            </section>
+
+
+        </div>
+
+        <!-- footer section -->
+        <div class="footer">
+
+            <!-- This div contains the first part of the footer, which displays the about us content  -->
+            <div class="a">
+                <h2><strong>About Us</strong></h2>
+                <br>
+
+                <p class="san">We are a camera selling company and we sell various types of cameras from prize from
+                    higher
+                    end to affordable price.
+                    We are known for our service after sales. </p>
+            </div>
+
+            <!-- This div contains the second part of the footer, which displays the address content  -->
+            <div class="b">
+                <h2> <strong> Address </strong> </h2>
+                <br>
+                <p class="hello1">Tripreshwor,kathmandu</p>
+                <p class="hello2">Khairahani-1,Chitwan</p>
+                <p class="hello3">Bharatpur-10,Chitwan</p>
+                <br>
+                <p class="hello4">Copyright © 2023.All rights reserverd</p>
+            </div>
+
+            <!-- This div contains the third and last section of the footer, which displays small form   -->
+            <div class="c">
+                <h2><strong>Feedback</strong></h2>
+                <br>
+                <i class="light phone"></i>
+                <form name="messageForm" onsubmit="validateForm()">
+                    <input class="emaildoing" type="text" name="Email" id="useremail" placeholder="Email address">
+                    <br>
+                    <textarea class="texting" name="Textarea" rows="2.5" cols="37" name="message" id="message"
+                        placeholder="Enter your message"></textarea>
+                    <br>
+                    <input class="sending" type="submit" value="submit">
+                </form>
+
+
+            </div>
+
+        </div>
+        <script type="text/javascript" src="form.js">
+
+         </script>
+        
+
+
+</body>
+
+</html>

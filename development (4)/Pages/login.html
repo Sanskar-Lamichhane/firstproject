@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- metatags -->
+    <!-- A <meta> tag with a "name" attribute set to "description" and a "content" attribute that contains a description of the webpage. -->
+    <meta name="description" content="about login page of camera selling website ">
+
+    <!-- A <meta> tag with a "name" attribute set to "author" and a "content" attribute that contains the names of the authors of the webpage. -->
+    <meta name="author" content="Sanskar Lamichhane,Bisworam Joshi,Anjali Yadav">
+
+    <!-- A <meta> tag with a "name" attribute set to "viewport" and a "content" attribute that specifies the viewport settings for the webpage. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- linking css file to login page -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="body">
+    <table class="container">
+        <tr>
+            <td>
+                <table class="arrangement">
+                    <tr>
+                        <td><span> Login</span></td>
+                    </tr>
+                </table>
+                <table class="input-container">
+                    <tr>
+                        <td class="main_input">
+                            <div class="input-field">
+                                <label for="user">Username</label>
+                                <input type="text" name="username" id="user" required>
+                            </div>
+                            <div class="input-field">
+                                <label for="pass">Password</label>
+                                <input type="password" name="password" id="pass" required>
+                            </div>
+                            <div class="input-field">
+                                <input type="submit" class="submit" name="submit" value="Login" id="submit-btn">
+                            </div>
+                            <div><a href="#">Forgot password?</a></div>
+                            <div>
+                                <p>Don't have an account?<a href="../Pages/signup.html">Sign Up</a></p>
+                            </div>
+                            <div id="error"></div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        // Add event listener to submit button
+        const submitBtn = document.getElementById('submit-btn');
+        submitBtn.addEventListener('click', () => {
+            e.preventDefault();
+
+            // Get username and password values
+            const username = document.getElementById('user').value;
+            const password = document.getElementById('pass').value;
+            const errorElement = document.getElementById('error');
+            let messages = [];
+
+            // Validate username and password
+            if (username.trim() === '') {
+                messages.push('Username is required');
+            }
+
+            if (password.trim() === '') {
+                messages.push('Password is required');
+            }
+
+            if (password.length <= 6 && password.length >= 1) {
+                messages.push("Password must be longer than 6 characters");
+            }
+
+            if (password.length >= 20) {
+                messages.push("Password must be less than 20 characters");
+            }
+
+            // Display error messages if any
+            if (messages.length > 0) {
+                errorElement.innerText = messages.join(', ');
+            } else {
+                // Proceed with login or further processing
+                // Here, you can submit the form or perform additional actions
+                // document.getElementById('user').form.submit();
+                alert('Thank you for logging in!!!');
+            }
+        });
+    </script>
+
+</body>
+

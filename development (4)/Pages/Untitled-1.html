@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  
+
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+  }
+
+  .container{
+    width:100%;
+    height:100vh;
+    background:#3c5077;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+  }
+
+ #mysubmit{
+  font-size:1em;
+
+ }
+
+ .don{
+  text-align:center;
+  font-style:normal;
+  font-weight:bold;
+  font-size:30px;
+ }
+
+ #popup1{
+  text-align:center;
+  background:red;
+  border-radius:6px;
+  border-color:black;
+  border-width:10px;
+  margin-left:500px;
+  margin-right:500px;
+  margin-top:30px;
+  visibility:hidden;
+  
+
+
+  
+ }
+
+
+  
+
+</style>
+
+</head>
+<body>
+  <input type="checkbox"  id="myCheckBox">
+  <label for="myCheckBox">subscribe</label><br>
+  
+  <input type="radio"  id="visaBtn" name="card">
+  <label for="visaBtn">Visa</label>
+  <input type="radio"  id="masterCard" name="card">
+  <label for="visaBtn">MasterCard</label>
+  <input type="radio"  id="payPalBtn" name="card">
+  <label for="visaBtn">PayPal</label>
+
+  <button id="mysubmit">Submit</button>
+
+  <div id="popup1">
+    <h2>Thank you!</h2>
+    <P>You are succesfully susbcribed, Thanks!</P>
+    <button id="button1" onclick="closepopup()">Ok</button>
+  </div>
+  
+  
+  <div id="SubResult" ></div>
+
+  <p id="paymentResult"></p>
+
+
+
+  <script src="./index.js"></script>
+</body>
+</html>

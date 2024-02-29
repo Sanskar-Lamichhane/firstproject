@@ -1,0 +1,642 @@
+ /* header css */
+
+
+ .header-list1 {
+
+
+     margin-top: 0px;
+     margin-right: 0px;
+     margin-left: 0px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     margin-left: 400px;
+     flex: 1;
+     margin-right: 80px;
+     align-items: center;
+
+
+
+
+
+ }
+
+ /* logo design */
+ .logo {
+     height: 80px;
+ }
+
+
+ .header-list {
+     display: flex;
+
+     align-items: center;
+     margin-left: 200px;
+     margin-right: 100px;
+ }
+
+
+
+ .header {
+     display: flex;
+     background-color: rgb(55, 147, 147);
+     position: fixed;
+     top: 0px;
+     right: 0px;
+     left: 0px;
+     height: 100px;
+     z-index: 1;
+ }
+
+ .social {
+     text-decoration: none;
+     color: white;
+     cursor: pointer;
+     background-color: rgb(55, 147, 147);
+     border: none;
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+     transition: opacity 0.5s;
+     font-size: 14px;
+
+
+
+
+
+ }
+
+ .design1 {
+     background-color: orange;
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold;
+     cursor: pointer;
+     transition: opacity 0.4s;
+     border-radius: 10px;
+     padding: 10px 15px 10px 15px;
+
+
+
+ }
+
+ .social:hover {
+     color: black;
+     opacity: 0.7;
+
+ }
+
+ .social:active {
+     color: black;
+ }
+
+ .design1:hover {
+     opacity: 0.6;
+ }
+
+ .active {
+     background-color: black;
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold;
+     cursor: pointer;
+     transition: opacity 0.4s;
+     border-radius: 10px;
+     padding: 10px 15px 10px 15px;
+
+
+
+
+ }
+
+
+
+
+
+
+ /* footer css */
+
+ .footer {
+
+     
+     
+     
+     width: 100%;
+     border-top-left-radius: 150px;
+     height: 250px;
+     padding: 0px 10px 70px 100px;
+     background: rgb(68, 67, 78);
+     color: azure;
+     display: flex;
+     margin-top: 50px;
+     justify-content: start;
+     align-items: center;
+   
+   
+
+
+ }
+
+
+
+
+
+ footer div {
+     text-align: center;
+
+
+ }
+
+
+ .a {
+     width: 400px;
+     margin-left: 10px;
+
+     padding-left: 2px;
+     display: flex;
+     flex-direction: column;
+     height: 180px;
+     padding-top: 10px;
+
+
+ }
+
+ .b {
+     display: flex;
+     flex-direction: column;
+     height: 180px;
+     margin-left: 140px;
+
+
+
+
+ }
+
+
+ .c {
+     display: flex;
+     flex-direction: column;
+     height: 180px;
+     margin-left: 140px;
+
+
+ }
+
+ footer div h2 {
+     font-weight: 400;
+
+     margin-bottom: 10px;
+
+     letter-spacing: 2px;
+
+     font-size: 20px;
+
+ }
+
+
+ form input {
+     width: 300px;
+     height: 35px;
+     text-align: center;
+
+     border-radius: 5px;
+
+     margin-top: 18px;
+
+     margin-bottom: 6px;
+
+     outline: none;
+     border: none;
+ }
+
+ form button {
+     width: 100px;
+     height: 25px;
+     border: solid #fff;
+     background: transparent;
+     color: white;
+     border-radius: 5px;
+
+     cursor: pointer;
+     margin-top: 6px;
+
+     text-align: center;
+
+ }
+
+ i {
+     font-size: 25px;
+
+     color: white;
+ }
+
+ form textarea {
+
+     width: 300px;
+     height: 35px;
+     text-align: center;
+
+     border-radius: 5px;
+
+     margin-top: 18px;
+
+
+     margin-bottom: 6px;
+
+     outline: none;
+     border: none;
+ }
+
+ .sending {
+     margin-top: 3px;
+
+ }
+
+ .emaildoing {
+     margin-top: 10px;
+
+ }
+
+ footer {
+     margin-top: 100px;
+
+ }
+
+
+
+
+
+
+ .texting {
+     width: 300px;
+     height: 30px;
+     text-align: center;
+
+     border-radius: 5px;
+
+     margin-top: 18px;
+
+
+     margin-bottom: 6px;
+
+     outline: none;
+     border: none;
+ }
+
+ form button {
+     width: 100px;
+     height: 25px;
+     border: solid #fff;
+     background: transparent;
+     color: white;
+     border-radius: 5px;
+
+     cursor: pointer;
+     margin-top: 6px;
+
+     text-align: center;
+
+ }
+
+
+
+ .hello1,
+ .hello2,
+ .hello3 {
+     margin-top: 10px;
+     font-size: 20px;
+ }
+
+ .san {
+     font-size: 17px;
+ }
+
+
+
+ /* css for login page and signup page  */
+
+ .body {
+     background: url("../images/3.jpg");
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 80vh;
+     font-family: Arial;
+ }
+
+ .container {
+     background: url("../images/1.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 10px;
+     min-height: 400px;
+     min-width: 370px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+         0 2px 20px 0 rgba(0, 0, 0, 0.2);
+
+ }
+
+ header {
+     display: flex;
+     justify-content: center;
+     margin: 20px 0 0 0;
+     font-size: 30px;
+     color: black;
+
+ }
+
+ .input-container {
+     margin: 30px 30px 10px 30px;
+ }
+
+ .input-container label {
+     color: black;
+     margin: 0 0 5px 15px;
+ }
+
+ .input-container .input-field {
+     display: flex;
+     flex-direction: column;
+     margin: 15px 0 15px 0;
+ }
+
+ .input-container input {
+     outline: none;
+     padding: 0 20px 0 20px;
+     border: 2px solid rgba(255, 255, 255, 0.015);
+     background: rgba(255, 255, 255, 0.35);
+     height: 38px;
+     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.085),
+         0 2px 30px 0 rgba(0, 0, 0, 0.2);
+     border-radius: 50px;
+     font-size: 16px;
+     color: black;
+ }
+
+ .input-container input:focus,
+ .input-container input:valid {
+     border: 2px solid rgba(255, 255, 255, 0.65);
+     background: transparent;
+     box-shadow: none;
+     border-radius: 30px;
+ }
+
+ .input-container .submit {
+     background: transparent;
+     height: 40px;
+     border: 2px solid black;
+     box-shadow: none;
+     transition: .3s ease-in-out;
+     margin-top: 10px;
+ }
+
+ .input-container .submit:hover {
+     color: rgb(106, 87, 168);
+     cursor: pointer;
+     border: 2px solid rgba(255, 255, 255, 0.016);
+     background: rgba(255, 255, 255, 0.35);
+     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.085),
+         0 2px 30px 0 rgba(0, 0, 0, 0.2);
+ }
+
+ .body span {
+     display: flex;
+     justify-content: right;
+ }
+
+ .body span a {
+     color: black;
+     font-size: 12px;
+     text-decoration: none;
+ }
+
+
+ .body p {
+     display: flex;
+     justify-content: center;
+ }
+
+
+
+ /* bbbbbbbbbb */
+
+ .cam1 {
+     height: 200px;
+     width: 300px;
+
+ }
+
+
+
+
+ .system1 {
+     height: 350px;
+     width: 300px;
+     border-style: solid;
+     border-width: 1px;
+
+
+
+
+
+
+
+ }
+
+ .system1:hover {
+     opacity: 0.6;
+     transform: translateY(-0.8%);
+ }
+
+
+
+
+ .FP {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     column-gap: 10px;
+     margin-left: 50px;
+     row-gap: 10px;
+
+
+
+ }
+
+ .property1 {
+     font-family: Arial, Helvetica, sans-serif;
+     font-style: normal;
+     color: red;
+     font-weight: bold;
+     font-size: 20px;
+     margin-left: 100px;
+     margin-bottom: 10px;
+
+ }
+
+ .hello {
+     margin-left: 25px;
+ }
+
+
+
+
+
+ .don {
+     background-color: black;
+     color: white;
+     padding: 10px 20px 10px 20px;
+     margin-top: 10px;
+     border-radius: 10px;
+     cursor: pointer;
+     margin-left: 100px;
+     transition: opacity 0.3s;
+
+ }
+
+
+ .don:hover {
+
+
+     background-color: red;
+
+ }
+
+ .cut {
+     text-decoration: line-through;
+ }
+
+ .paragraph1 {
+     font-size: 30px;
+     font-family: Arial;
+     margin-left: 50px;
+     color: black;
+     margin-top: 50px;
+     margin-bottom: 25px;
+ }
+
+
+
+
+ /* for home page below featured products */
+ /* The .description_box class applies to a container element 
+and sets its position, width, height, background-image, margin,
+ top, border-radius, padding, and border values. */
+.overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+    position: relative;
+    width: 90%;
+    height: 78vh;
+    background-image: linear-gradient(rgb(19, 19, 52), rgb(42, 62, 107));
+   
+    top: 20px;
+    border-radius: 70px;
+    padding: 32px;
+    border: 0.1px solid black;
+   
+  }
+  
+  /* The #des1, #des2, #des3, and #des4 rules apply to elements with 
+  the corresponding IDs and set their left, width, and background-color values.they are section having 
+  all information about different webpages */
+  
+  #des1 {
+  
+    width: 320px;
+    background-color: #f4f4f4;
+  }
+  
+  #des2 {
+
+    width: 320px;
+    background-color: #f4f4f4;
+  }
+  
+  #des3 {
+  
+    width: 320px;
+    background-color: #f4f4f4;
+  }
+  
+  #des4 {
+
+    width: 320px;
+    background-color: #f4f4f4;
+  }
+  
+  /* The .des class applies to elements within the .description_box container 
+  and sets their text-align, position, height, border-radius, margin-top, and border values. des is class of 
+  all section having other elements like logo and paragraph having information of other
+  webpages*/
+  .des {
+    text-align: center;
+    margin: 45px;
+
+    height: 560px;
+    border-radius: 40px;
+    margin-top: 35px;
+    border: 2px solid black;
+  }
+  
+  /* hover effect to description boxes  */
+  .des:hover {
+    transform: translateY(-0.8%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }
+  
+  /* The .des p rule applies to p elements within elements with the 
+  .des class and sets their margin-top, padding, font-size, font-family,
+   font-weight, and color values */
+  .des p {
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 25px;
+    font-family: smallcursive;
+    font-weight: 550px;
+    color: rgb(62, 61, 61);
+  }
+  
+  /* The .des h1 rule applies to h1 elements within elements with the
+   .des class and sets their font-family and letter-spacing values. */
+  .des h1 {
+    font-family: slogan;
+    letter-spacing: 2px;
+  }
+  
+  /* The .des p a rule applies to a elements within p elements 
+  within elements with the .des class and sets their text-decoration,
+   color, position, top, padding, border-radius, font-family, font-size,
+    letter-spacing, and background values. */
+  .des p a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 40px;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: bigbold;
+    font-size: 18px;
+    letter-spacing: 3px;
+    background: rgb(249, 11, 51);
+  }
+  
+  /* The .des p a:hover rule defines a hover effect for a elements 
+  within p elements within elements with the .des class, which changes 
+  the background and box-shadow of the element when the cursor is hovered over it. */
+  .des p a:hover {
+    background: rgb(11, 249, 74);
+    box-shadow: 0 0 5px rgb(11, 249, 74), 0 0 25px rgb(11, 249, 74);
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+

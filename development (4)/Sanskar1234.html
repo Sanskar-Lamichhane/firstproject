@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+</head>
+<body>
+
+   <h1>users:</h1>
+   <button onclick="fetchingprocess()">View</button>
+   <ul id="color">
+   </ul>
+   <div id="additionalContent"></div>
+  
+   <script>
+    let hasfetched = false;
+
+    function fetchingprocess() {
+        if (hasfetched) {
+            alert("List of people is already displayed");
+        } else {
+            fetch('https://jsonplaceholder.typicode.com/users')
+                .then(response => {
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data);
+                    const userList = document.getElementById('color');
+                    data.forEach(user => {
+                        const listItem = `<li>${user.id}${user.name}</li>`;
+                        userList.insertAdjacentHTML('beforeend', listItem);
+                    });
+
+                    // Create a new form element
+                    const newForm = document.createElement('form');
+                    newForm.innerHTML = `
+                        <label for="newInput">New Input:</label>
+                        <input type="text" id="newInput" name="newInput">
+                        <button type="button" onclick="submitNewForm()">Submit</button>
+                    `;
+
+                    // Append the new form to the additional content div
+                    document.getElementById('additionalContent').appendChild(newForm);
+
+                    hasfetched = true;
+                })
+                .catch(error => console.log(error));
+        }
+    }
+
+    // Function to handle the submission of the new form
+    function submitNewForm() {
+        const newInputValue = document.getElementById('newInput').value;
+        alert(`New Form Submitted with value: ${newInputValue}`);
+    }
+   </script>
+
+</body>
+</html>

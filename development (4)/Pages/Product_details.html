@@ -1,0 +1,488 @@
+<!DOCTYPE html> <!--  TELLING BROWSER WE ARE USING HTML 5 -->
+<html lang="en">
+
+<head>
+
+    <!-- metatags -->
+
+    <!-- A <meta> tag with a "name" attribute set to "description" and a "content" attribute that contains a description of the webpage. -->
+    <meta name="description" content="about product_details page of camera selling website(cammy) ">
+
+    <!-- A <meta> tag with a "name" attribute set to "author" and a "content" attribute that contains the names of the authors of the webpage. -->
+    <meta name="author" content="Sanskar Lamichhane,Biswo Joshi,Anjali Yadav">
+
+    <!-- A <meta> tag with a "name" attribute set to "viewport" and a "content" attribute that specifies the viewport settings for the webpage. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product_details page</title>
+
+    <!-- linking css file to product_details page -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- internal css for product_details page -->
+    <style>
+        /* Global CSS reset */
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* Styling for the body */
+        body {
+            overflow-x: hidden;
+        }
+
+        /* Styling for images */
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Styling for the main wrapper */
+        .main-wrapper {
+            min-height: 100vh;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Styling for the container */
+        .container {
+            max-width: 1400px;
+            padding: 0 1rem;
+            margin-top: 100px;
+            background-color: white;
+        }
+
+        /* Styling for the product division */
+        .product-div {
+            margin: 1rem 0;
+            padding: 2rem 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            background-color: #fff;
+            border-radius: 3px;
+            column-gap: 10px;
+        }
+
+        /* Styling for the left section of the product division */
+        .product-div-left {
+            padding: 20px;
+        }
+
+        /* Styling for the right section of the product division */
+        .product-div-right {
+            padding: 20px;
+        }
+
+        /* Styling for the image container */
+        .img-container img {
+            width: 500px;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        /* Styling for the hover container */
+        .hover-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-top: 32px;
+        }
+
+        /* Styling for the individual items in the hover container */
+        .hover-container div {
+            border: 2px solid rgba(252, 160, 175, 0.7);
+            padding: 1rem;
+            border-radius: 3px;
+            margin: 0 4px 8px 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Styling for the active item in the hover container */
+        .active {
+            border-color: rgb(255, 145, 163) !important;
+        }
+
+        /* Styling for the hover effect on items in the hover container */
+        .hover-container div:hover {
+            border-color: rgb(255, 145, 163);
+        }
+
+        /* Styling for the images within the hover container */
+        .hover-container div img {
+            width: 50px;
+            cursor: pointer;
+        }
+
+        /* Styling for the product price */
+        .product-div-right span {
+            display: block;
+        }
+
+        .productprice {
+            font-weight: 700;
+            font-size: 24px;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+
+        /* Styling for the product rating */
+        .product-rating {
+            display: flex;
+            align-items: center;
+            margin-top: 12px;
+        }
+
+        .product-rating span {
+            margin-right: 6px;
+        }
+
+        /* Styling for the product description */
+        .product-description {
+            font-weight: 18px;
+            line-height: 1.6;
+            font-weight: 300;
+            opacity: 0.9;
+            margin-top: 22px;
+        }
+
+        /* Styling for the button groups */
+        .btn-groups {
+            margin-top: 22px;
+        }
+
+        .btn-groups button {
+            display: inline-block;
+            font-size: 16px;
+            font-family: inherit;
+            text-transform: uppercase;
+            padding: 15px 16px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s
+        }
+
+        .buy-now-btn{
+            color:white;
+            border-radius:2px;
+            color:white;
+            transition:0.5s;
+            background-color:black;
+            border-radius:8px;
+        }
+        
+        .buy-now-btn:hover{
+            background-color:rgb(198, 93, 93);
+
+        }
+    
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- header part starts from here  -->
+    <div class="header">
+        <div class="header-list">
+
+            <!-- for our website logo  -->
+            <img class="logo" src="../images/Logo1.png" alt="no img">
+
+        </div>
+
+        <!-- code for the navigation bar  -->
+        <div class="header-list1">
+
+
+            <div><a href="/"><button class="social">Home</button></a></div>
+            <div><a href="./product.html"><button class="active">Product</button></a></div>
+            <div><a href="./research.html"><button class="social">Research</button></a></div>
+            <div><a href="./blog.html"><button class="social">Blog</button></a></div>
+            <div><a href="./aboutus.html"><button class="social">About us</button></a></div>
+
+            <!-- code for login and sign up page -->
+            <div><a href="./login.html"><button class="design1">Login</button></a></div>
+            <div><a href="./signup.html"><button class="design1">Sign up</button></a></div>
+
+        </div>
+    </div>
+    <!-- header part closes from here  -->
+
+
+
+
+    <!-- main container where multiple containers are present. The divs present inside it are container, product-div, 
+    product-div-left,img-container,product-div-right  -->
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="product-div">
+                <div class="product-div-left">
+                    <div class="img-container">
+
+                        <!-- image is loaded over here, if not loaded it will display "watch" 
+                         It is the main image in the initial time  -->
+                        <img src="../images/pd1.jpg" alt="watch">
+                    </div>
+                    <!-- There are other images which are inside div(hover-container)  -->
+                    <div class="hover-container">
+                        <div><img src="../images/pd1.jpg"></div>
+                        <div><img src="../images/pd2.jpg"></div>
+                        <div><img src="../images/pd3.jpg"></div>
+                        <div><img src="../images/pd4.jpg"></div>
+                        <div><img src="../images/pd5.jpg"></div>
+                    </div>
+                </div>
+
+                <!-- This container includes the right side of the container where there are different contents written,
+                
+                by using different tags -->
+                <div class="product-div-right">
+
+                    <!-- inline css for the Canon EOS R5 written inside span tag  -->
+                    <span style="font-size: 26px;
+                                 margin-bottom: 22px;
+                                 font-weight: 700;
+                                 letter-spacing: 1px;
+                                 opacity: 0.9;">
+                        Canon EOS R5
+                    </span>
+
+                    <!-- inline css is used here for the product price  -->
+                    <span class="productprice" style="text-decoration:line-through;">Rs 2,00,000</span>
+                    <span class="productprice">Rs 1,80,000</span>
+
+                    <!-- This include the overall description of the porducts  -->
+                    <p class="product-description">The Canon EOS 5 is a professional-grade 35mm film SLR camera
+                        that was first introduced by Canon in 1992. It is also known as the Canon EOS A2 in some
+                        markets. The EOS 5/A2 was part of Canon's popular EOS series, which included both film
+                        and digital cameras.The camera also offered a variety of exposure modes, including program
+                        auto-exposure, aperture priority, shutter priority, and full manual control. It had a top
+                        shutter speed of 1/8000th of a second and a maximum flash sync speed of 1/125th of a second.
+                        t's worth noting that there is also a digital camera named Canon EOS 5D, which is a full-frame
+                        DSLR introduced by Canon in 2005. It quickly became a popular choice among professional
+                        photographers due to its high image quality and versatility. However, if you were referring
+                        to the Canon EOS 5 specifically, it is associated with the film-based EOS camera from the 1990s.
+                    </p>
+
+
+
+                    <!-- In this section, we have a <div> element with the class "btn-groups" that contains a button  -->
+                    <div class="btn-groups">
+
+                        <a href="./Product.html"><button class="buy-now-btn">Back now</button></a>
+
+                        <!-- The button has an onclick attribute set to the JavaScript function showAlert(), 
+                            and it has a class "buy-now-btn". The comment above indicates that this section is
+                            the Button Group Section.  -->
+                        <button onclick="showAlert()" type="button" class="buy-now-btn">
+                            Shop now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- div which contains the list of related products with the name of the related products, price (both inital and
+        discounted)  -->
+
+    <div class="paragraph1"> Related products</div>
+
+    <section class="FP">
+        <div class="system1">
+            <img class="cam1" src="../images/product1.jpg">
+            <div class="property1">Canon EOS R5</div>
+            <div class="hello">
+                <div class="cut">Rs 2,00,000</div>
+                <div>Rs 1,93,000 </div>
+            </div>
+            <div><a href="./Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+
+
+        <div class="system1">
+            <img class="cam1" src="../images/product2.jpg">
+            <div class="property1">Canon EOS 70D</div>
+            <div class="hello">
+                <div class="cut">Rs 1,50,000</div>
+                <div>Rs 1,30,000 </div>
+            </div>
+            <div><a href="./Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+
+
+        <div class="system1">
+            <img class="cam1" src="../images/product3.png">
+            <div class="property1">Canon EOS 5D</div>
+            <div class="hello">
+                <div class="cut">Rs 1,23,000</div>
+                <div>Rs 1,20,000 </div>
+            </div>
+            <div><a href="./Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+
+
+        <div class="system1">
+            <img class="cam1" src="../images/product4.jpg">
+            <div class="property1">Canon EOS R6</div>
+            <div class="hello">
+                <div class="cut">Rs 2,27,000</div>
+                <div>Rs 2,18,000 </div>
+            </div>
+            <div><a href="./Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+
+        <div class="system1">
+            <img class="cam1" src="../images/product5.jpg">
+            <div class="property1">Sony A7 III</div>
+            <div class="hello">
+                <div class="cut">Rs 2,50,000</div>
+                <div>Rs 2,20,000 </div>
+            </div>
+            <div><a href="./Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+
+
+        <div class="system1">
+            <img class="cam1" src="../images/product7.png">
+            <div class="property1">Nikon D850</div>
+            <div class="hello">
+                <div class="cut">Rs 1,00,000</div>
+                <div>Rs 90,000 </div>
+            </div>
+            <div><a href="./Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+
+        <div class="system1">
+            <img class="cam1" src="../images/product8.webp">
+            <div class="property1">Nikon D6</div>
+            <div class="hello">
+                <div class="cut">Rs 1,24,000</div>
+                <div>Rs 1,10,000</div>
+            </div>
+            <div><a href="./Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+
+        <div class="system1">
+            <img class="cam1" src="../images/action1.jpg">
+            <div class="property1">Gopro Hero 10</div>
+            <div class="hello">
+                <div class="cut">Rs 1,21,000</div>
+                <div> Rs1,10,000 </div>
+            </div>
+            <div><a href="./Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- footer section starts from here  -->
+    <!-- This footer element contains the footer content for the page -->
+    <div class="footer">
+
+        <!-- This div contains the first part of the footer, which displays the about us content -->
+        <div class="a">
+            <h2><strong>About Us</strong></h2>
+            <br>
+
+            <p class="san">We are a camera selling company and we sell various types of cameras from prize from
+                higher
+                end to affordable price.
+                We are known for our service after sales. </p>
+        </div>
+
+        <!-- This div contains the first part of the footer, which displays the address content  -->
+        <div class="b">
+            <h2> <strong> Address </strong> </h2>
+            <br>
+            <p class="hello1">Tripreshwor,kathmandu</p>
+            <p class="hello2">Khairahani-1,Chitwan</p>
+            <p class="hello3">Bharatpur-10,Chitwan</p>
+            <br>
+            <p class="hello4">Copyright © 2023.All rights reserverd</p>
+
+
+        </div>
+
+        <!-- This div contains the first part of the footer, which displays small form within it  -->
+        <div class="c">
+            <h2><strong>Feedback</strong></h2>
+            <br>
+            <i class="light phone"></i>
+            <form name="messageForm" onsubmit="validateForm()">
+                <input class="emaildoing" type="text" name="Email" id="user email"
+                    placeholder="Type your email address">
+                <br>
+                <textarea class="texting" name="Textarea" rows="2.5" cols="37" name="message"
+                    placeholder="Enter your message"></textarea>
+                <br>
+                <input class="sending" type="submit" value="submit">
+            </form>
+
+
+        </div>
+    </div>
+
+    <!-- importing external javascript for the form validation used in footer -->
+   <script src="../form.js"></script>
+
+
+
+
+    <!-- javascript to hover other images and get it as a main image (in the product-div-left))  -->
+    <script>
+
+        const allHoverImages = document.querySelectorAll('.hover-container div img');
+        const imgContainer = document.querySelector('.img-container');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            allHoverImages[0].parentElement.classList.add('active');
+        });
+
+        allHoverImages.forEach((image) => {
+            image.addEventListener('mouseover', () => {
+                imgContainer.querySelector('img').src = image.src;
+                resetActiveImg();
+                image.parentElement.classList.add('active');
+            });
+        });
+
+        function resetActiveImg() {
+            allHoverImages.forEach((img) => {
+                img.parentElement.classList.remove('active');
+            });
+        } 
+
+    </script>
+
+<!-- javascript to create popup after clicking shop now button  -->
+    <script>
+        function showAlert() {
+            alert('Thank you for buying this item!!!');
+        }
+    </script>
+</body>
+
+</html>

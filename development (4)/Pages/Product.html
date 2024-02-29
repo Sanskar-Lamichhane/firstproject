@@ -1,0 +1,592 @@
+<!DOCTYPE html><!--  TELLING BROWSER WE ARE USING HTML 5 -->
+<html lang="en">
+
+<head>
+
+   <!-- metatags -->
+   <!-- A <meta> tag with a "name" attribute set to "description" and a "content" attribute that contains a description of the webpage. -->
+  <meta name="description" content="about product page of camera selling website(cammy) ">
+
+  <!-- A <meta> tag with a "name" attribute set to "author" and a "content" attribute that contains the names of the authors of the webpage. -->
+  <meta name="author" content="Sanskar Lamichhane,Biswo Joshi,Anjali Yadav">
+
+  <!-- A <meta> tag with a "name" attribute set to "viewport" and a "content" attribute that specifies the viewport settings for the webpage. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+
+   <!-- linking css file to product page -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- internal css for product page -->
+  <style>
+    /* Global CSS reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+/* Styling for the body */
+body {
+    overflow-x: hidden;
+}
+
+/* Styling for flex container */
+.flexing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling for search section */
+.search-section {
+    flex: 1;
+    margin-left: 100px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    margin-top: 130px;
+}
+
+/* Styling for search bar */
+.search-bar {
+    flex: 1;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(192, 192, 192);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+
+/* Styling for search bar placeholder */
+.search-bar::placeholder {
+    font-size: 16px;
+}
+
+/* Styling for search button */
+.search-button {
+    height: 42px;
+    width: 66px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    margin-left: -1px;
+    margin-right: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Styling for search button and voice search button */
+.search-button,
+.voice-search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Styling for tooltip on search button and voice search button */
+.search-button .tooltip,
+.voice-search-button .tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+/* Styling for tooltip on hover of search button and voice search button */
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip {
+    opacity: 1;
+}
+
+/* Styling for search icon */
+.search-icon {
+    height: 25px;
+}
+
+/* Styling for voice search button */
+.voice-search-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+}
+
+/* Styling for voice search icon */
+.voice-search-icon {
+    height: 24px;
+}
+
+/* Styling for flex container for timer */
+.flexingtimer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- header part starts from here -->
+  <div class="header">
+    <div class="header-list">
+
+      <!-- for our website logo -->
+      <img class="logo" src="../images/Logo1.png" alt="no img">
+    </div>
+    <div class="header-list1">
+
+      <!-- code for navigation bar  -->
+      <div><a href="../index.html"><button class="social">Home</button></a></div>
+      <div><a href="./Product.html"><button class="active">Product</button></a></div>
+      <div><a href="./research.html"><button class="social">Research</button></a></div>
+      <div><a href="./blog.html"><button class="social">Blog</button></a></div>
+      <div><a href="./aboutus.html"><button class="social">About us</button></a></div>
+
+      <!-- code for sign in and sign up button  -->
+      <div><a href="./login.html"><button class="design1">Login</button></a></div>
+      <div><a href="./signup.html"><button class="design1">Sign up</button></a></div>
+
+    </div>
+  </div>
+<!-- header part closes from here -->
+
+
+  <section class="flexing">
+
+    <p class="paragraph1" style="margin-top:150px;">
+      TOP SELLERS
+    </p>
+
+    <!-- div for the search section which includes search-bar,search-button, and voice-search-icon -->
+    <div class="search-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-button">
+
+        <!-- inline css for the search image -->
+        <img style="height:25px;" src="../images/search.svg">
+
+        <div class="tooltip">Search</div>
+      </button>
+      <button class="voice-search-button">
+        <img class="voice-search-icon" src="../images/voice-search-icon.svg">
+        <div class="tooltip">Search with your voice</div>
+
+      </button>
+    </div>
+  </section>
+
+  <br>
+
+<!-- section for the list of each products with the name of the prodcuts
+   initial price and discounted price of top sellers category -->
+  <section class="FP">
+
+    <div class="system1">
+      <img class="cam1" src="../images/product1.jpg">
+      <div class="property1">Canon EOS R5</div>
+      <div class="hello">
+        <div class="cut">Rs.2,00,000</div>
+        <div>Rs.93,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+
+    <div class="system1">
+      <img class="cam1" src="../images/product3.png">
+      <div class="property1">Canon EOS 5D</div>
+      <div class="hello">
+        <div class="cut">Rs.1,67,000</div>
+        <div>Rs.1,40,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+
+    <div class="system1">
+      <img class="cam1" src="../images/product2.jpg">
+      <div class="property1">Canon EOS 70D</div>
+      <div class="hello">
+        <div class="cut">Rs.1,50,000</div>
+        <div>Rs.1,30,000</div>
+
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+
+    <div class="system1">
+      <img class="cam1" src="../images/product5.jpg">
+      <div class="property1">Sony A7 III</div>
+      <div class="hello">
+        <div class="cut">Rs.2,50,000</div>
+        <div>Rs.2,20,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+    <div class="system1">
+      <img class="cam1" src="../images/product4.jpg">
+      <div class="property1">Canon EOS R6</div>
+      <div class="hello">
+        <div class="cut">Rs.2,27,000</div>
+        <div>Rs.2,18,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+
+    <div class="system1">
+      <img class="cam1" src="../images/product8.webp">
+      <div class="property1">Nikon D6</div>
+      <div class="hello">
+        <div class="cut">Rs.1,24,000</div>
+        <div>Rs.1,10,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+
+    <div class="system1">
+      <img class="cam1" src="../images/action1.jpg">
+      <div class="property1">Gopro Hero 10</div>
+      <div class="hello">
+        <div class="cut">Rs.1,21,000</div>
+        <div>Rs.1,00,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+
+    <div class="system1">
+      <img class="cam1" src="../images/product7.png">
+      <div class="property1">Nikon D850</div>
+      <div class="hello">
+        <div class="cut">Rs.1,00,000</div>
+        <div>Rs.93,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+  </section>
+
+<!-- inline css for the Action Cameras written within the <p> tag -->
+  <p class="paragraph1" style="margin-top: 50px;
+                               margin-bottom: 20px;">
+    ACTION CAMERAS
+  </p>
+  <br>
+
+  <!-- section for the list of each products with the name of the products initial
+     and discounted price of category Action Cameras -->
+  <section class="FP">
+    <div class="system1">
+      <img class="cam1" src="../images/action1.jpg">
+      <div class="property1">Gopro Hero 10</div>
+      <div class="hello">
+        <div class="cut">Rs.1,21,000</div>
+        <div>Rs.1,00,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+    <div class="system1">
+      <img class="cam1" src="../images/action2.jpg">
+      <div class="property1">Gopro Hero 8</div>
+      <div class="hello">
+        <div class="cut">Rs.1,20,000</div>
+        <div>Rs.1,00,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+
+    <div class="system1">
+      <img class="cam1" src="../images/Action3.jpg">
+      <div class="property1">Sony RXO</div>
+      <div class="hello">
+        <div class="cut">Rs.2,00,000</div>
+        <div>Rs.1,93,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+
+    <div class="system1">
+      <img class="cam1" src="../images/Action4.jpg">
+      <div class="property1">Dragon Touch</div>
+      <div class="hello">
+        <div class="cut">Rs.1,40,000</div>
+        <div>Rs.1,18,000</div>
+
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+  </section>
+
+
+
+<!-- inline css for the Digital cameras written within the <p> tag -->
+  <p class="paragraph1" style="margin-top: 50px; margin-bottom: 20px;">
+    DIGITAL CAMERAS
+  </p>
+  <br>
+
+  <!-- section for the list of each products with the inclusion of products name,
+     initial price and discounted price of the Digital Cameras
+     category -->
+  <section class="FP">
+    <div class="system1">
+      <img class="cam1" src="../images/D1.jpeg">
+      <div class="property1">Sony xvit</div>
+      <div class="hello">
+        <div class="cut">Rs.1,50,000</div>
+        <div>Rs.1,23,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+
+    <div class="system1">
+      <img class="cam1" src="../images/D2.jpg">
+      <div class="property1">Sony tif 2022</div>
+      <div class="hello">
+        <div class="cut">Rs.1,35,000</div>
+        <div>Rs.1,00,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+    <div class="system1">
+      <img class="cam1" src="../images/product2.jpg">
+      <div class="property1">Canon EDS 70D</div>
+      <div class="hello">
+        <div class="cut">Rs.1,28,000</div>
+        <div>Rs.1,18,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+
+    <div class="system1">
+      <img class="cam1" src="../images/product3.png">
+      <div class="property1">Canon EDS 50D</div>
+      <div class="hello">
+        <div class="cut">Rs.1,21,000</div>
+        <div>Rs.1,10,000</div>
+
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+  </section>
+
+<!-- section which contains the Special Offers(50% off) written in <p> tag and as well as includes the span tag with id "countdown" -->
+  <section class="flexingtimer">
+
+    <!-- inline css for the Special Offers(50% off) written within the <p> tag -->
+    <p class="paragraph1" style="margin-top: 50px;
+                                 margin-bottom: 20px;">
+      SPECIAL OFFERS(50% off)
+    </p>
+
+    <!-- inline css for the id countdown -->
+    <span id="countdown" style="font-size: 24px;
+                                color:black;
+                                background-color:grey;margin-left:50px; padding: 10px;border-radius: 4px; display:flex; margin-top:35px;">
+    </span>
+  </section>
+
+  <!-- section which includes the each products with its name, inital price and discounted price.  -->
+  <!-- on the other hand discount amount is 50% of the initial price -->
+  <section class="FP">
+    <div class="system1">
+      <img class="cam1" src="../images/O1.webp">
+      <div class="property1">Nikon D6</div>
+      <div class="hello">
+        <div class="cut">Rs.1,50,000</div>
+        <div>Rs.75,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+
+    <div class="system1">
+      <img class="cam1" src="../images/O2.jpg">
+      <div class="property1">Nixon xxt 2019</div>
+      <div class="hello">
+        <div class="cut">Rs.1,20,000</div>
+        <div>Rs.60,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+
+    <div class="system1">
+      <img class="cam1" src="../images/O3.jpg">
+      <div class="property1">Nikon VVS 2021</div>
+      <div class="hello">
+        <div class="cut">Rs.1,30,000</div>
+        <div>Rs.65,000</div>
+
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+
+    <div class="system1">
+      <img class="cam1" src="../images/O4.jpg">
+      <div class="property1">Nikon 2SPT 2020</div>
+      <div class="hello">
+        <div class="cut">Rs.1,10,000</div>
+        <div>Rs.55,000</div>
+      </div>
+      <div><a href="../Pages/Product_details.html"><button class="don">Buy now</button></a></div>
+
+
+    </div>
+  </section>
+
+<!-- footer section starts from here -->
+ <!-- This footer element contains the footer content for the page -->
+  <div class="footer">
+
+
+    <!-- This div contains the first part of the footer, which displays the about us content  -->
+    <div class="a">
+      <h2><strong>About Us</strong></h2>
+      <br>
+      <p class="san">We are a camera selling company and we sell various types of cameras from prize from higher end to
+        affordable price.
+        We are known for our service after sales. </p>
+    </div>
+
+    <!-- This div contains the second part of the footer, which displays the address content  -->
+    <div class="b">
+      <h2> <strong> Address </strong> </h2>
+      <br>
+      <p class="hello1">Tripreshwor,kathmandu</p>
+      <p class="hello2">Khairahani-1,Chitwan</p>
+      <p class="hello3">Bharatpur-10,Chitwan</p>
+      <br>
+      <p class="hello4">Copyright © 2023.All rights reserverd</p>
+   </div>
+
+    <!-- This div contains the third part of the footer, which displays the small form  -->
+    <div class="c">
+      <h2><strong>Feedback</strong></h2>
+      <br>
+      <i class="light phone"></i>
+      <form name="messageForm" onsubmit="validateForm()">
+        <input class="emaildoing" type="text" name="Email" id="user email" placeholder="Type your email address">
+        <br>
+        <textarea class="texting" name="Textarea" rows="2.5" cols="37" name="message"
+          placeholder="Enter your message"></textarea>
+        <br>
+        <input class="sending" type="submit" value="submit">
+      </form>
+
+
+    </div>
+  
+  </div>
+
+
+
+<!-- importing external javascript for the form validation used in footer -->
+ <script src="../form.js"></script>
+
+
+<!-- javacript for the timer used behind the Special offers -->
+<script>
+  // Set the target end time (e.g., 1 hour from the current time)
+  const endTime = new Date().getTime() + 3600000; // 1 hour = 60 minutes * 60 seconds * 1000 milliseconds
+
+  // Update the countdown timer every second
+  const countdown = document.getElementById('countdown');
+
+  function updateCountdown() {
+    const currentTime = new Date().getTime();
+    const remainingTime = endTime - currentTime;
+
+    // Calculate the remaining hours, minutes, and seconds
+    const hours = Math.floor(remainingTime / (1000 * 60 * 60));
+    const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+    // Display the countdown timer in the HTML element
+    countdown.textContent = `Time remaining: ${hours}h ${minutes}m ${seconds}s`;
+
+    // Check if the countdown has ended
+    if (remainingTime <= 0) {
+      countdown.textContent = "Time's up!";
+      // You can perform additional actions when the countdown ends
+    }
+  }
+
+  // Initial update to display the countdown
+  updateCountdown();
+
+  // Update the countdown every second (1000 milliseconds)
+  setInterval(updateCountdown, 1000);
+</script>
+
+</body>
+</html>

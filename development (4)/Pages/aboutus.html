@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- metatags -->
+    <!-- A <meta> tag with a "name" attribute set to "description" and a "content" attribute that contains a description of the webpage. -->
+    <meta name="description" content="about us page of camera selling website ">
+
+    <!-- A <meta> tag with a "name" attribute set to "author" and a "content" attribute that contains the names of the authors of the webpage. -->
+    <meta name="author" content="Sanskar Lamichhane,Biswo Joshi,Anjali Yadav">
+
+    <!-- A <meta> tag with a "name" attribute set to "viewport" and a "content" attribute that specifies the viewport settings for the webpage. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- linking css file to about us page -->
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* internal css for about us page */
+        
+        /* Styling for the photo container */
+.photocontainer {
+    width: 480px;
+    height: 444px;
+    display: flex;
+}
+
+/* Styling for the images inside the photo container */
+.photocontainer img {
+    width: 480px;
+    height: 444px;
+    display: flex;
+    border-radius: 50px;
+    background-color: red;
+}
+
+/* Styling for the main box section */
+.mainbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Styling for the first container */
+.first-container {
+    border: 1px solid black;
+    max-width: 100%;
+    margin-top: 130px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Styling for the photo holder */
+.photoholder {
+    margin: 15px;
+    height: 55vh;
+    background-color: rgb(183, 193, 202);
+    border-radius: 50px;
+}
+
+/* Styling for the content within the photo holder */
+.photocontent {
+    display: flex;
+    margin-left: 50px;
+    border-radius: 50px;
+    padding: 33px;
+    max-height: 150px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+/* Styling for links within the photo content */
+.photocontent a {
+    text-decoration: none;
+    color: rgb(115, 115, 200);
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+/* Styling for the hover effect on links within the photo content */
+.photocontent a:hover {
+    text-decoration: underline;
+}
+
+/* Global CSS reset */
+* {
+    font-family: Arial;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Prevent horizontal overflow on the body */
+body {
+    overflow-x: hidden;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- header part starts from here -->
+    <div class="header">
+        <div class="header-list">
+            <!-- for our website logo -->
+            <img class="logo" src="../images/Logo1.png" alt="no img">
+
+        </div>
+
+
+        <!-- code for navigation bar  -->
+        <div class="header-list1">
+
+
+            <div><a href="../index.html"><button class="social">Home</button></a></div>
+            <div><a href="./Product.html" class="social">Product</a></div>
+            <div><a href="./research.html"><button class="social">Research</button></a>
+            </div>
+            <div><a href="./blog.html"><button class="social">Blog</button></a></div>
+            <div><a href="./aboutus.html"><button class="active">About us</button></a></div>
+
+            <!-- code for sign in and sign up button  -->
+            <div><a href="./login.html"><button class="design1">Login</button></a></div>
+            <div><a href="./signup.html"><button class="design1">Sign up</button></a></div>
+
+        </div>
+    </div>
+    <!-- header part closes here -->
+
+    <!-- div which continas slight overview of our website,
+    what does we do?,
+    what is our services? etc -->
+    <div class="first-container">
+        <h1 style="text-align:center;
+    font-size:50px;">About us</h1>
+        <p style="font-family: arial;
+                  letter-spacing: 2px;
+                  box-sizing: border-box;
+                  font-size: 24px;
+                  padding:40px;
+                 text-align:justify;">
+            cammy is a website which sells camera of all brands to the people with proper services and
+            other essential helps required.
+            At the sametime, we considered to be the most reliable camera selling website in this time.
+        </p>
+    </div>
+
+    <h1 style="text-align:center;
+               margin-top:70px;
+               padding-top:30px;
+               font-size:40px;
+               height:70px;
+               background-color:black;
+               color:white;
+               letter-spacing:2px;">
+        Our Team Members
+    </h1>
+
+    <!-- section for displating team member details -->
+    <section class="mainbox">
+
+
+        <div class="photocontainer">
+            <img src="../images/bsw.jpg">
+        </div>
+
+        <div class="photoholder">
+            <div class="photocontent photo1">
+                <h1>Bishwo Joshi</h1>
+                <p style="font-size:30px;
+                          padding-left:90px;
+                          text-align:center;
+                          line-height:30px;
+                          padding-right:90px;
+                           letter-spacing:1px;">
+                    I am Bishwo Joshi a recent high school graduate from Modern Indian
+                    School. I guide everyone in the group with every aspect of work
+                    related to web development. My main objective here is to design the
+                    website for a store that sell camera equipment.
+                </p>
+                <a href="#" onclick="toggleContent1(event)">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- section for displaying another team member details -->
+    <section class="mainbox">
+        <div class="photoholder">
+            <div class="photocontent photo2" style="margin-left:0;
+                                             margin-right:50px">
+                <h1>Sanskar Lamichhane</h1>
+                <p style="font-size:30px;
+                          padding-left:90px;
+                          text-align:center;
+                          line-height:30px;
+                          padding-right:90px;
+                          letter-spacing:1px;">
+                    I am Sanskar Lamichhane, a high school graduate from Daisy Higher
+                    Secondary Boarding School. I work as the main Code writer and web
+                    designer. My main objective here is to guide everyone for work
+                    related for coding.
+                </p>
+                <a href="#" onclick="toggleContent2(event)">Read More</a>
+            </div>
+        </div>
+
+
+        <div class="photocontainer ">
+            <img src="../images/sans.jpg">
+        </div>
+    </section>
+
+    <!-- section for displaying third team member details -->
+
+    <section class="mainbox">
+
+        <div class="photocontainer">
+            <img src="../images/anj.jpeg">
+        </div>
+        <div class="photoholder">
+            <div class="photocontent photo3">
+                <h1>Anjali Yadav</h1>
+                <p style="font-size:30px;
+                          padding-left:90px;
+                          text-align:center;
+                          line-height:30px;
+                          padding-right:90px;
+                          letter-spacing:1px;">
+                    I am Anjali Yadav, a recent high school graduate Model Multiple
+                    campus. I have worked as a Website Designer, Content Writer and
+                    Researcher in our website. My main objestive here is to research
+                    contents for the website and code simplication.
+                </p>
+                <a href="#" onclick="toggleContent3(event)">Read More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section starts from here -->
+    <!-- This footer element contains the footer content for the page -->
+    <div class="footer">
+
+
+        <!-- This div contains the first part of the footer, which displays the about us content  -->
+        <div class="a">
+            <h2><strong>About Us</strong></h2>
+            <br>
+            <p class="san">We are a camera selling company and we sell various types of cameras from prize from higher
+                end to
+                affordable price.
+                We are known for our service after sales. </p>
+        </div>
+
+        <!-- This div contains the second part of the footer, which displays the address content  -->
+        <div class="b">
+            <h2> <strong> Address </strong> </h2>
+            <br>
+            <p class="hello1">Tripreshwor,kathmandu</p>
+            <p class="hello2">Khairahani-1,Chitwan</p>
+            <p class="hello3">Bharatpur-10,Chitwan</p>
+            <br>
+            <p class="hello4">Copyright © 2023.All rights reserverd</p>
+        </div>
+
+        <!-- This div contains the third part of the footer, which displays the small form  -->
+        <div class="c">
+            <h2><strong>Feedback</strong></h2>
+            <br>
+            <i class="light phone"></i>
+            <form name="messageForm" onsubmit="validateForm()">
+                <input class="emaildoing" type="text" name="Email" id="user email"
+                    placeholder="Type your email address">
+                <br>
+                <textarea class="texting" name="Textarea" rows="2.5" cols="37" name="message"
+                    placeholder="Enter your message"></textarea>
+                <br>
+                <input class="sending" type="submit" value="submit">
+            </form>
+
+
+        </div>
+
+    </div>
+   
+    <!-- importing external javascript for the form validation used in footer -->
+     <script src="../form.js"></script>
+    
+
+    <script>
+        function toggleContent1(event) {
+            event.preventDefault();
+
+            var content = document.querySelector('.photo1');
+            var link = event.target;
+
+            if (content.style.maxHeight) {
+                // Content is currently visible, hide it
+                content.style.maxHeight = null;
+                link.textContent = 'Read More';
+            } else {
+                // Content is currently hidden, show it
+                content.style.maxHeight = content.scrollHeight + 'px';
+                link.textContent = 'Read Less';
+            }
+        }
+        function toggleContent2(event) {
+            event.preventDefault();
+
+            var content = document.querySelector('.photo2');
+            var link = event.target;
+
+            if (content.style.maxHeight) {
+                // Content is currently visible, hide it
+                content.style.maxHeight = null;
+                link.textContent = 'Read More';
+            } else {
+                // Content is currently hidden, show it
+                content.style.maxHeight = content.scrollHeight + 'px';
+                link.textContent = 'Read Less';
+            }
+        }
+        function toggleContent3(event) {
+            event.preventDefault();
+
+            var content = document.querySelector('.photo3');
+            var link = event.target;
+
+            if (content.style.maxHeight) {
+                // Content is currently visible, hide it
+                content.style.maxHeight = null;
+                link.textContent = 'Read More';
+            } else {
+                // Content is currently hidden, show it
+                content.style.maxHeight = content.scrollHeight + 'px';
+                link.textContent = 'Read Less';
+            }
+        }
+    </script>
+</body>
+
+</html>

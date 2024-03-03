@@ -7,3 +7,5 @@ function ab(element){
         console.log(element)
     }
 }
+
+console.log("man");

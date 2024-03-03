@@ -9,3 +9,5 @@ function ab(element){
 }
 
 console.log("man");
+
+console.log("zero")
